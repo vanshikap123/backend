@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express()
-const port = 4000
+const port = process.env.port || 4000
 const connecttodb = require('./db');
 const UserSchema = require('./models/UserSchema');
 let userrouter = require('./routes/userroutes');
